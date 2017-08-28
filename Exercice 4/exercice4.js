@@ -4,39 +4,12 @@ calculer la somme des chiffres contenus dans un tableau bi-dimensionnel
 
 Notre première fonction (ci-dessous) ne donne pas le résultat escompté
 
-1. Expliquer pourquoi : les boucles portent le même indice pour l'itération
-2. Proposer une correction : remplacer l'un des "i" par "j"
+1. Expliquer pourquoi
+2. Proposer une correction
 
 3. Proposer une solution avec uniquement var
 4. Proposer une solution avec uniquemnet let
 */
-
-/* 3.
-function sommeTableau(tableau) {
-    var somme = 0;
-    for (var j = 0; j < tableau.length; j++) {
-        var ligne = tableau[j];
-        for (var i = 0; i < ligne.length; i++) {
-            somme += ligne[i];
-        }
-    }
-    return somme;
-}
-*/
-
-/* 4.
-function sommeTableau(tableau) {
-    let somme = 0;
-    for (let j = 0; j < tableau.length; j++) {
-        let ligne = tableau[j];
-        for (let i = 0; i < ligne.length; i++) {
-            somme += ligne[i];
-        }
-    }
-    return somme;
-}
-*/
-
 function sommeTableau(tableau) {
     var somme = 0;
     for (var i = 0; i < tableau.length; i++) {
