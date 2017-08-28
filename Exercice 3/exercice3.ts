@@ -12,8 +12,8 @@ class Personne {
   private nom: string;
   private prenom: string;
 
-  public saluer(): string{
-    return `Bonjour, je m'appelle ${this.nom} ${this.prenom}`;
+  public saluer(): void{
+    console.log(`Bonjour, je m'appelle ${this.nom} ${this.prenom}`);
   }
 }
 
