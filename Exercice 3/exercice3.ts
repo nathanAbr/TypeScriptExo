@@ -39,5 +39,9 @@ enum Cursus{
 }
 
 class Etudiant extends Personne{
-  private cursus = Cursus.Informatique;
+  private cursus: Cursus;
+  constructor(nom: string, prenom: string){
+    super(nom, prenom);
+    this.cursus = Cursus.Informatique;
+  }
 }

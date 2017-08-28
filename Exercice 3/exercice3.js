@@ -45,8 +45,8 @@ var Cursus;
 })(Cursus || (Cursus = {}));
 var Etudiant = /** @class */ (function (_super) {
     __extends(Etudiant, _super);
-    function Etudiant() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
+    function Etudiant(nom, prenom) {
+        var _this = _super.call(this, nom, prenom) || this;
         _this.cursus = Cursus.Informatique;
         return _this;
     }
