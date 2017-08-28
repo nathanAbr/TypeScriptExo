@@ -28,9 +28,9 @@ soumettre le résultat sur votre dépot github
 
 */
 enum Cursus{
-  Informatique = "Informatique",
-  Langue = "Langue",
-  Mathematiques = "Mathematiques"
+  Informatique,
+  Langue,
+  Mathematiques
 }
 
 class Etudiant extends Personne{

@@ -45,17 +45,17 @@ function monNever(): never{
   }
 }
 
-function maCouleur(): string{
+function maCouleur(): Couleur{
   return Couleur.Bleu;
 }
 
 enum Couleur{
-  Rouge="rouge",
-  Vert="vert",
-  Bleu="bleu"
+  Rouge,
+  Vert,
+  Bleu
 }
 
 function notDefined(): undefined{
-  let nom: string;
-  return undefined;
+  let nom: undefined;
+  return nom;
 }
