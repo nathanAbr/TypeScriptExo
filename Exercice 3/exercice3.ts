@@ -8,7 +8,14 @@ Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 */
 
-class Personne
+class Personne {
+  private nom: string;
+  private prenom: string;
+
+  public saluer(): string{
+    return `Bonjour, je m'appelle ${this.nom} ${this.prenom}`;
+  }
+}
 
 /*
 Partie 2
@@ -20,6 +27,12 @@ Vérifier la bonne compilation de vote code, inspecter le code produit et
 soumettre le résultat sur votre dépot github
 
 */
-enum ...
+enum Cursus{
+  Informatique = "Informatique",
+  Langue = "Langue",
+  Mathematiques = "Mathematiques"
+}
 
-class Etudiant
+class Etudiant extends Personne{
+  private cursus = Cursus.Informatique;
+}
