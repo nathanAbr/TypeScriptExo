@@ -4,11 +4,11 @@ calculer la somme des chiffres contenus dans un tableau bi-dimensionnel
 
 Notre première fonction (ci-dessous) ne donne pas le résultat escompté
 
-1. Expliquer pourquoi
-2. Proposer une correction
+1. Expliquer pourquoi : elle est déclarer avec var donc les 2 variable d'iteration i est la même
+2. Proposer une correction : modifier l'une des variables pour changer son nom
 
-3. Proposer une solution avec uniquement var
-4. Proposer une solution avec uniquemnet let
+3. Proposer une solution avec uniquement var cf 2.
+4. Proposer une solution avec uniquemnet let reprendre le code du début et modifier var par let
 */
 
 function sommeTableau(tableau: number[][]) {

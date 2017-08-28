@@ -14,7 +14,6 @@ interface Contact extends Personne {
 Indiquer la hiérachie de type pour chacune des classes suivantes
 sous la forme d'un commentaire au dessus de la définition
 */
-
 /* L'étudiant hérite de la classe personne mais n'implémente pas l'interface contact */
 class Etudiant extends Personne {}
 
