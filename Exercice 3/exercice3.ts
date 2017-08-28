@@ -12,6 +12,11 @@ class Personne {
   private nom: string;
   private prenom: string;
 
+  constructor(nom: string, prenom: string){
+    this.nom = nom;
+    this.prenom = prenom;
+  }
+
   public saluer(): void{
     console.log(`Bonjour, je m'appelle ${this.nom} ${this.prenom}`);
   }
