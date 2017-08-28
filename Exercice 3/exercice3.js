@@ -18,10 +18,12 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var Personne = /** @class */ (function () {
-    function Personne() {
+    function Personne(nom, prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
     }
     Personne.prototype.saluer = function () {
-        return "Bonjour, je m'appelle " + this.nom + " " + this.prenom;
+        console.log("Bonjour, je m'appelle " + this.nom + " " + this.prenom);
     };
     return Personne;
 }());
@@ -37,9 +39,9 @@ soumettre le résultat sur votre dépot github
 */
 var Cursus;
 (function (Cursus) {
-    Cursus["Informatique"] = "Informatique";
-    Cursus["Langue"] = "Langue";
-    Cursus["Mathematiques"] = "Mathematiques";
+    Cursus[Cursus["Informatique"] = 0] = "Informatique";
+    Cursus[Cursus["Langue"] = 1] = "Langue";
+    Cursus[Cursus["Mathematiques"] = 2] = "Mathematiques";
 })(Cursus || (Cursus = {}));
 var Etudiant = /** @class */ (function (_super) {
     __extends(Etudiant, _super);
