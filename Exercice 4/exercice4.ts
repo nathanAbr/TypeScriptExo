@@ -6,9 +6,35 @@ Notre première fonction (ci-dessous) ne donne pas le résultat escompté
 
 1. Expliquer pourquoi : elle est déclarer avec var donc les 2 variable d'iteration i est la même
 2. Proposer une correction : modifier l'une des variables pour changer son nom
+/*
+
+function sommeTableau(tableau: number[][]) {
+  var somme = 0;
+  for (var i = 0; i < tableau.length; i++) {
+    var ligne = tableau[i];
+    for (var j = 0; j < ligne.length; j++) {
+      somme += ligne[j];
+    }
+  }
+
+  return somme;
+}
 
 3. Proposer une solution avec uniquement var cf 2.
 4. Proposer une solution avec uniquemnet let reprendre le code du début et modifier var par let
+
+function sommeTableau(tableau: number[][]) {
+  var somme = 0;
+  for (let i = 0; i < tableau.length; i++) {
+    var ligne = tableau[i];
+    for (let i = 0; i < ligne.length; i++) {
+      somme += ligne[i];
+    }
+  }
+
+  return somme;
+}
+
 */
 
 function sommeTableau(tableau: number[][]) {
